@@ -347,4 +347,4 @@ pin on the secondary device.
 and bits have a short delay (`BITBANG_DELAY`) between them. bitbang-echo
 listens, interprets bytes, and prints them on the serial line.
 
-Don't forget to make sure your devices share a command ground.
+Don't forget to make sure your devices share a common ground.
