@@ -1,5 +1,5 @@
 # IR Box
-An Arduino-based Wi-Fi server that wraps
+An Arduino-based Wi-Fi server that uses
 [Arduino-IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote) to
 allow users to transmit infrared commands to devices.
 
@@ -50,7 +50,7 @@ Configure arduino-build for your environment and use make.
   repeater.
 
 ## Getting it Working
-![Prototype layout.](https://github.com/spakov/irbox/doc/prototype.jpg)
+![Prototype layout.](https://github.com/spakov/irbox/images/prototype.jpeg)
 
 The first thing you'll want to do is load the program to your Arduino. Next,
 you'll want to configure the baud rate of the Wi-Fi module.
