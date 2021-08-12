@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+    <title>irbox.h</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}body {border: 0px; margin: 0px;}div {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}td {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}span.hd_tocAccessSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroupSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroup { display: block; font-weight: bold; font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; margin-left: 0px; padding-left: 40px; }span.hd_tocGroup + span.hd_tocAccess { padding-top: 5px; }td.toc_contents_text {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; }li.tocSubEntry {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}p {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}h2.h2tight { margin-top: 0px; padding-top: 0px; }h1 { margin-top: 13px; padding-top: 0px; }h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}h5 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10.1pt; font-weight: bold;}pre {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666; font-size: 10pt;}pre a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}pre a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}body  {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt; padding-left: 0px; padding-top: 0px; margin-left: 0px; margin-top: 0px; border: none; }#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }.afterName { display: none; }.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; min-height: 12px; vertical-align: middle; }.declaration_indent pre { margin-top: 20px; padding-top: 0px; margin-bottom: 20px; padding-bottom: 0px; }.gapBeforeFooter { display: none; }hr { height: 0px; min-height: 0px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #909090;}hr.afterHeader { display: none }.param_group_indent { margin-left: 25px; }.param_indent { margin-left: 40px; margin-top: 0px; padding-top: 0px; }.param_indent dl { margin-top: 4px; padding-top: 0px; }dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.param_indent dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.note_indent { margin-left: 40px; }h3 {       color: #3C4C6C;}.tight {       margin-top: 2px; margin-bottom: 0px;       padding-top: 0px; padding-bottom: 0px;}h3 a {       color: #3C4C6C;	font-size: 16px;	font-style: normal;	font-variant: normal;	font-weight: bold;	height: 0px;	line-height: normal;}.hd_tocAccess { display: block; margin-left: 40px; font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }.tocSubheading { margin-bottom: 4px; }--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script>
+<script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script>
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}body {border: 0px; margin: 0px;}div {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}td {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}span.hd_tocAccessSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroupSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroup { display: block; font-weight: bold; font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; margin-left: 0px; padding-left: 40px; }span.hd_tocGroup + span.hd_tocAccess { padding-top: 5px; }td.toc_contents_text {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; }li.tocSubEntry {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}p {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}h2.h2tight { margin-top: 0px; padding-top: 0px; }h1 { margin-top: 13px; padding-top: 0px; }h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}h5 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10.1pt; font-weight: bold;}pre {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666; font-size: 10pt;}pre a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}pre a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}body  {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt; padding-left: 0px; padding-top: 0px; margin-left: 0px; margin-top: 0px; border: none; }#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }.afterName { display: none; }.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; min-height: 12px; vertical-align: middle; }.declaration_indent pre { margin-top: 20px; padding-top: 0px; margin-bottom: 20px; padding-bottom: 0px; }.gapBeforeFooter { display: none; }hr { height: 0px; min-height: 0px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #909090;}hr.afterHeader { display: none }.param_group_indent { margin-left: 25px; }.param_indent { margin-left: 40px; margin-top: 0px; padding-top: 0px; }.param_indent dl { margin-top: 4px; padding-top: 0px; }dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.param_indent dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.note_indent { margin-left: 40px; }h3 {       color: #3C4C6C;}.tight {       margin-top: 2px; margin-bottom: 0px;       padding-top: 0px; padding-bottom: 0px;}h3 a {       color: #3C4C6C;	font-size: 16px;	font-style: normal;	font-variant: normal;	font-weight: bold;	height: 0px;	line-height: normal;}.hd_tocAccess { display: block; margin-left: 40px; font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }.tocSubheading { margin-bottom: 4px; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/irbox.h;   name=irbox.h -->
+<a name="//apple_ref/doc/header/irbox.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<h1><a name="irbox.h">irbox.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+<tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<!-- a logicalPath="//apple_ref/doc/header/Arduino.h" machineGenerated="true" -->&lt;Arduino.h&gt;<!-- /a --><br>
+<a machinegenerated="true" href="../ir_h/index.html#//apple_ref/doc/header/ir.h" logicalPath="//apple_ref/doc/header/ir.h" target="_top">"ir.h"</a><br>
+<a machinegenerated="true" href="../server_h/index.html#//apple_ref/doc/header/server.h" logicalPath="//apple_ref/doc/header/server.h" target="_top">"server.h"</a><br>
+<a machinegenerated="true" href="../bitbang_h/index.html#//apple_ref/doc/header/bitbang.h" logicalPath="//apple_ref/doc/header/bitbang.h" target="_top">"bitbang.h"</a></div></div></td>
+</tr>
+</table></div>
+<h2>Introduction</h2>
+<p><!-- headerDoc=abstract;uid=//apple_ref/doc/header/irbox.h;name=start --><!-- begin abstract --></p>
+<p>IR box main routines.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/doc/header/irbox.h;name=end --></p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_vars"></a>
+<h2 class="h2tight">Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/serialBuffer" target="_top">serialBuffer</a></tt></dt>
+<dd><p>Buffer for received serial data.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=data;  uid=//apple_ref/c/data/serialBuffer;   name=serialBuffer -->
+<a name="//apple_ref/c/data/serialBuffer"></a>
+<h3><a name="serialBuffer">serialBuffer</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/data/serialBuffer;name=start --><!-- begin abstract --></p>
+<p>Buffer for received serial data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/data/serialBuffer;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/data/serialBuffer;name=start --><span class="keyword">extern</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/data/serialBuffer" logicalPath="//apple_ref/c/cl/serialBuffer //apple_ref/c/tdef/serialBuffer //apple_ref/c/tag/serialBuffer //apple_ref/c/struct/serialBuffer //apple_ref/c/intf/serialBuffer //apple_ref/doc/anysymbol/serialBuffer" target="_top"><span class="type">serialBuffer</span></a>[<a machinegenerated="true" href="index.html#//apple_ref/c/macro/SERIAL_BUFFER_SIZE" logicalPath="//apple_ref/c/cl/SERIAL_BUFFER_SIZE //apple_ref/c/tdef/SERIAL_BUFFER_SIZE //apple_ref/c/tag/SERIAL_BUFFER_SIZE //apple_ref/c/struct/SERIAL_BUFFER_SIZE //apple_ref/c/intf/SERIAL_BUFFER_SIZE //apple_ref/doc/anysymbol/SERIAL_BUFFER_SIZE" target="_top"><span class="type">SERIAL_BUFFER_SIZE</span></a>];  <!-- headerDoc=declaration;uid=//apple_ref/c/data/serialBuffer;name=end --></pre>
+</div>
+<hr class="betweenSections">
+<a name="HeaderDoc_pdefines"></a>
+<h2 class="h2tight">Macro Definitions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/macro/BAUD_RATE" target="_top">BAUD_RATE</a></tt></dt>
+<dd><p>Use this baud rate for all serial communication (but not bitbanging).
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/macro/INIT_DELAY" target="_top">INIT_DELAY</a></tt></dt>
+<dd><p>A short delay at startup, in milliseconds, to wait for connected devices to become initialized.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/macro/IR_RX_PIN" target="_top">IR_RX_PIN</a></tt></dt>
+<dd><p>The pin to use to receive infrared data.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/macro/IR_TX_PIN" target="_top">IR_TX_PIN</a></tt></dt>
+<dd><p>The pin to use to transmit infrared data. Recommend pin 3 for best results.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/macro/SERIAL_BUFFER_SIZE" target="_top">SERIAL_BUFFER_SIZE</a></tt></dt>
+<dd><p>The size, in bytes, of the buffer to use to read serial data.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/macro/SERIAL_TIMEOUT" target="_top">SERIAL_TIMEOUT</a></tt></dt>
+<dd><p>The timeout, in milliseconds, to pass to <code>Serial.setTimeout()</code>.
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/BAUD_RATE;   name=BAUD_RATE -->
+<a name="//apple_ref/c/macro/BAUD_RATE"></a>
+<h3><a name="BAUD_RATE">BAUD_RATE</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/BAUD_RATE;name=start --><!-- begin abstract --></p>
+<p>Use this baud rate for all serial communication (but not bitbanging).
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/BAUD_RATE;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/BAUD_RATE;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/BAUD_RATE" logicalPath="//apple_ref/c/cl/BAUD_RATE //apple_ref/c/tdef/BAUD_RATE //apple_ref/c/tag/BAUD_RATE //apple_ref/c/struct/BAUD_RATE //apple_ref/c/intf/BAUD_RATE //apple_ref/c/econst/BAUD_RATE //apple_ref/c/data/BAUD_RATE //apple_ref/c/clconst/BAUD_RATE //apple_ref/c/instm/BAUD_RATE //apple_ref/c/clm/BAUD_RATE //apple_ref/c/intfcm/BAUD_RATE //apple_ref/c/intfm/BAUD_RATE //apple_ref/c/func/BAUD_RATE //apple_ref/c/ftmplt/BAUD_RATE //apple_ref/c/defn/BAUD_RATE //apple_ref/c/macro/BAUD_RATE" target="_top"><span class="preprocessor">BAUD_RATE</span></a> <span class="preprocessor">9600</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/BAUD_RATE;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/BAUD_RATE;name=start --><p>Valid values: <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/" target="_top">any baud rate</a> the board works with.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/BAUD_RATE;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/INIT_DELAY;   name=INIT_DELAY -->
+<a name="//apple_ref/c/macro/INIT_DELAY"></a>
+<h3><a name="INIT_DELAY">INIT_DELAY</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/INIT_DELAY;name=start --><!-- begin abstract --></p>
+<p>A short delay at startup, in milliseconds, to wait for connected devices to become initialized.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/INIT_DELAY;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/INIT_DELAY;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/INIT_DELAY" logicalPath="//apple_ref/c/cl/INIT_DELAY //apple_ref/c/tdef/INIT_DELAY //apple_ref/c/tag/INIT_DELAY //apple_ref/c/struct/INIT_DELAY //apple_ref/c/intf/INIT_DELAY //apple_ref/c/econst/INIT_DELAY //apple_ref/c/data/INIT_DELAY //apple_ref/c/clconst/INIT_DELAY //apple_ref/c/instm/INIT_DELAY //apple_ref/c/clm/INIT_DELAY //apple_ref/c/intfcm/INIT_DELAY //apple_ref/c/intfm/INIT_DELAY //apple_ref/c/func/INIT_DELAY //apple_ref/c/ftmplt/INIT_DELAY //apple_ref/c/defn/INIT_DELAY //apple_ref/c/macro/INIT_DELAY" target="_top"><span class="preprocessor">INIT_DELAY</span></a> <span class="preprocessor">2000</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/INIT_DELAY;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/INIT_DELAY;name=start --><p>Valid values: 0 &le; n &le; <code>ULONG_MAX</code>.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/INIT_DELAY;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/IR_RX_PIN;   name=IR_RX_PIN -->
+<a name="//apple_ref/c/macro/IR_RX_PIN"></a>
+<h3><a name="IR_RX_PIN">IR_RX_PIN</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/IR_RX_PIN;name=start --><!-- begin abstract --></p>
+<p>The pin to use to receive infrared data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/IR_RX_PIN;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/IR_RX_PIN;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/IR_RX_PIN" logicalPath="//apple_ref/c/cl/IR_RX_PIN //apple_ref/c/tdef/IR_RX_PIN //apple_ref/c/tag/IR_RX_PIN //apple_ref/c/struct/IR_RX_PIN //apple_ref/c/intf/IR_RX_PIN //apple_ref/c/econst/IR_RX_PIN //apple_ref/c/data/IR_RX_PIN //apple_ref/c/clconst/IR_RX_PIN //apple_ref/c/instm/IR_RX_PIN //apple_ref/c/clm/IR_RX_PIN //apple_ref/c/intfcm/IR_RX_PIN //apple_ref/c/intfm/IR_RX_PIN //apple_ref/c/func/IR_RX_PIN //apple_ref/c/ftmplt/IR_RX_PIN //apple_ref/c/defn/IR_RX_PIN //apple_ref/c/macro/IR_RX_PIN" target="_top"><span class="preprocessor">IR_RX_PIN</span></a> <span class="preprocessor">11</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/IR_RX_PIN;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/IR_RX_PIN;name=start --><p>Valid values: an <a href="https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins" target="_top">Arduino digital pin</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/IR_RX_PIN;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/IR_TX_PIN;   name=IR_TX_PIN -->
+<a name="//apple_ref/c/macro/IR_TX_PIN"></a>
+<h3><a name="IR_TX_PIN">IR_TX_PIN</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/IR_TX_PIN;name=start --><!-- begin abstract --></p>
+<p>The pin to use to transmit infrared data. Recommend pin 3 for best results.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/IR_TX_PIN;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/IR_TX_PIN;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/IR_TX_PIN" logicalPath="//apple_ref/c/cl/IR_TX_PIN //apple_ref/c/tdef/IR_TX_PIN //apple_ref/c/tag/IR_TX_PIN //apple_ref/c/struct/IR_TX_PIN //apple_ref/c/intf/IR_TX_PIN //apple_ref/c/econst/IR_TX_PIN //apple_ref/c/data/IR_TX_PIN //apple_ref/c/clconst/IR_TX_PIN //apple_ref/c/instm/IR_TX_PIN //apple_ref/c/clm/IR_TX_PIN //apple_ref/c/intfcm/IR_TX_PIN //apple_ref/c/intfm/IR_TX_PIN //apple_ref/c/func/IR_TX_PIN //apple_ref/c/ftmplt/IR_TX_PIN //apple_ref/c/defn/IR_TX_PIN //apple_ref/c/macro/IR_TX_PIN" target="_top"><span class="preprocessor">IR_TX_PIN</span></a> <span class="preprocessor">3</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/IR_TX_PIN;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/IR_TX_PIN;name=start --><p>Valid values: an <a href="https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins" target="_top">Arduino digital pin</a>.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/IR_TX_PIN;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;   name=SERIAL_BUFFER_SIZE -->
+<a name="//apple_ref/c/macro/SERIAL_BUFFER_SIZE"></a>
+<h3><a name="SERIAL_BUFFER_SIZE">SERIAL_BUFFER_SIZE</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=start --><!-- begin abstract --></p>
+<p>The size, in bytes, of the buffer to use to read serial data.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/SERIAL_BUFFER_SIZE" logicalPath="//apple_ref/c/cl/SERIAL_BUFFER_SIZE //apple_ref/c/tdef/SERIAL_BUFFER_SIZE //apple_ref/c/tag/SERIAL_BUFFER_SIZE //apple_ref/c/struct/SERIAL_BUFFER_SIZE //apple_ref/c/intf/SERIAL_BUFFER_SIZE //apple_ref/c/econst/SERIAL_BUFFER_SIZE //apple_ref/c/data/SERIAL_BUFFER_SIZE //apple_ref/c/clconst/SERIAL_BUFFER_SIZE //apple_ref/c/instm/SERIAL_BUFFER_SIZE //apple_ref/c/clm/SERIAL_BUFFER_SIZE //apple_ref/c/intfcm/SERIAL_BUFFER_SIZE //apple_ref/c/intfm/SERIAL_BUFFER_SIZE //apple_ref/c/func/SERIAL_BUFFER_SIZE //apple_ref/c/ftmplt/SERIAL_BUFFER_SIZE //apple_ref/c/defn/SERIAL_BUFFER_SIZE //apple_ref/c/macro/SERIAL_BUFFER_SIZE" target="_top"><span class="preprocessor">SERIAL_BUFFER_SIZE</span></a> <span class="preprocessor">62</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=start --><p>Valid values: 1 &le; n &le; <code>INT_MAX</code>.
+</p>
+<p>Arduino UART buffer size is 64, so recommend two bytes smaller than that for reasons I don't fully understand. Note that this results in a maximum command length. This yields a maximum effective command length of 51 bytes, which is plenty for even the most complex <code>tx</code>.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/SERIAL_BUFFER_SIZE;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/SERIAL_TIMEOUT;   name=SERIAL_TIMEOUT -->
+<a name="//apple_ref/c/macro/SERIAL_TIMEOUT"></a>
+<h3><a name="SERIAL_TIMEOUT">SERIAL_TIMEOUT</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=start --><!-- begin abstract --></p>
+<p>The timeout, in milliseconds, to pass to <code>Serial.setTimeout()</code>.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=start --><span class="preprocessor">#define</span> <a machinegenerated="true" href="index.html#//apple_ref/c/macro/SERIAL_TIMEOUT" logicalPath="//apple_ref/c/cl/SERIAL_TIMEOUT //apple_ref/c/tdef/SERIAL_TIMEOUT //apple_ref/c/tag/SERIAL_TIMEOUT //apple_ref/c/struct/SERIAL_TIMEOUT //apple_ref/c/intf/SERIAL_TIMEOUT //apple_ref/c/econst/SERIAL_TIMEOUT //apple_ref/c/data/SERIAL_TIMEOUT //apple_ref/c/clconst/SERIAL_TIMEOUT //apple_ref/c/instm/SERIAL_TIMEOUT //apple_ref/c/clm/SERIAL_TIMEOUT //apple_ref/c/intfcm/SERIAL_TIMEOUT //apple_ref/c/intfm/SERIAL_TIMEOUT //apple_ref/c/func/SERIAL_TIMEOUT //apple_ref/c/ftmplt/SERIAL_TIMEOUT //apple_ref/c/defn/SERIAL_TIMEOUT //apple_ref/c/macro/SERIAL_TIMEOUT" target="_top"><span class="preprocessor">SERIAL_TIMEOUT</span></a> <span class="preprocessor">10</span> <!-- headerDoc=declaration;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=start --><p>Valid values: 0 &le; n &le; <code>LONG_MAX</code>.
+<!-- headerDoc=discussion;uid=//apple_ref/c/macro/SERIAL_TIMEOUT;name=end --><!-- end discussion -->
+</p>
+<p class="gapBeforeFooter">&nbsp;</p>
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_timestamp">Last Updated: Thursday, August 12, 2021
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>
