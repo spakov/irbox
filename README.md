@@ -50,7 +50,7 @@ Configure arduino-build for your environment and use make.
   repeater.
 
 ## Getting it Working
-![Prototype layout.](https://github.com/spakov/irbox/images/prototype.jpeg)
+![Prototype layout.](https://github.com/spakov/irbox/blob/main/images/prototype.jpeg?raw=true)
 
 The first thing you'll want to do is load the program to your Arduino. Next,
 you'll want to configure the baud rate of the Wi-Fi module.
