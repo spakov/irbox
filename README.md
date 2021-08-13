@@ -25,12 +25,13 @@ using netcat.
 - Infrared receiver module, connected to Arduino
 
 ### Software
-- A Linux or UNIX-like system (I'm using MacOS) with common core packages
-- bash, zsh or similar (I'm using zsh)
+- [Arduino-IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote)
 - netcat, or your preferred general network communication tool
 - The [Arduino IDE](https://www.arduino.cc/en/software), or your preferred
   serial communication tool
 - [arduino-build](https://github.com/spakov/arduino-build)
+  - A Linux or UNIX-like system (I'm using MacOS) with common core packages
+  - bash, zsh or similar (I'm using zsh)
   - GNU make
   - [arduino-cli](https://github.com/arduino/arduino-cli) (for compiling and
     uploading)
